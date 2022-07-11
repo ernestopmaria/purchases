@@ -2,7 +2,12 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getPerson() {
+    const person = {
+      nome: 'Ernesto Maria',
+      idade: 18,
+      sexo: 'Masculino',
+    };
+    return person;
   }
 }
